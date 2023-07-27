@@ -51,15 +51,15 @@
                     </div>
                     <input type="submit" value="Send" class="btn btn-primary">
                 </form> -->
-                 <form>
+                 <form onsubmit="sendEmail(); reset(); return false;">
                     <div class="form-control">
                         <input type="text" name="name" placeholder="Name" required>
                     </div>
                     <div class="form-control">
-                        <input type="text" name="company" placeholder="Company Name" required>
+                        <input type="email" name="email" placeholder="Email" required>
                     </div>
                     <div class="form-control">
-                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="text" name="msg" placeholder="Message" required>
                     </div>
                     <input type="submit" value="Send" class="btn btn-primary">
                 </form>
@@ -139,8 +139,8 @@
     <footer class="footer bg-dark py-5">
         <div class="container grid grid-3">
             <div>
-                <h1>Kharis pro-tech.
-                </h1>
+                <a href="index.html"><h1>Kharis pro-tech.
+                </h1></a>
                 <p>Designed by John Blesson Rowe</p>
             </div>
             <nav>
@@ -159,5 +159,21 @@
             </div>
         </div>
     </footer>
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "jblessonrowe.2020@gmail.com",
+                Password : "Johnkharis@13",
+                To : 'johnblessonrowe@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "New Contact for Enquiry",
+                Body : "This is the body"
+            }).then(
+            message => alert(Message)
+            );
+        }
+    </script>
 </body>
 </html>
