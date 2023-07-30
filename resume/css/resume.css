@@ -10,6 +10,12 @@ body {
     padding-left: 17rem;
   }
 }
+/*
+@media (max-width: 480px) {
+  .mb-0 {
+    
+  }*/
+
 
 h1,
 h2,
@@ -151,6 +157,7 @@ section.resume-section .resume-item .resume-date {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
   }
+
 }
 
 .bg-primary {
