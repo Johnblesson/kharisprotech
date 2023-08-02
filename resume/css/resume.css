@@ -181,19 +181,35 @@ a:hover, a:focus, a:active {
   justify-content: center;
 }
 
-/** CV btn styling **/
+/** CV btn styling 
 .cv_btn {
   background-color: #bab9b9d2;
   border-radius: 28px;
-  border: 1px solid #2230B3FF;
+  border: 1px solid rgb(0, 1, 5);
   cursor: pointer;
-  color: #ffff;
+  color: #000;
   font-family: Arial;
   font-size: 14px;
   padding: 9px 18px;
   text-decoration: none;
   align-items: center;
+  display: flex;
+}**/
+
+.cv_btn {
+  background-color: #bab9b9d2;
+  border-radius: 28px;
+  
+  cursor: pointer;
+  color: #000;
+  font-family: Arial;
+  font-size: 14px;
+  padding: 9px 18px;
+  text-decoration: none;
+  display: block; /* Ensure the buttons are displayed as block elements */
+  margin-bottom: 10px; /* Add some margin between the buttons to space them vertically */
 }
+
 
 .cv_btn:hover {
   background-color: #ffff;
@@ -202,21 +218,4 @@ a:hover, a:focus, a:active {
   a {
     text-decoration: none;
   }
-/** CV btn styling 
-.cv_btn {
-  background-color: #bab9b9d2;
-  border-radius: 28px;
-  border: 1px solid #2230B3FF;
-  cursor: pointer;
-  color: #ffff;
-  font-family: Arial;
-  font-size: 14px;
-  padding: 9px 18px;
-  text-decoration: none;
-  align-items: center;
-}
-.cv_btn:hover {
-  background-color: #ffff;
-  }
-
   
