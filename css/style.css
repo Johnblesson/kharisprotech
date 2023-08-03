@@ -277,6 +277,8 @@ pre {
   color: #1C9CEA;
 }
 
+
+
 /* Animations */
 @keyframes slideInFromLeft {
   0% {
@@ -398,4 +400,9 @@ pre {
     width: 300px;
   }
 
+  .features-head img,
+  .docs-head img {
+   width: 100px;
+   justify-self: flex-end;
+  }
 }
