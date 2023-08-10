@@ -424,11 +424,24 @@ pre {
     display: none; /* Hide the regular navbar */
   }
 
-  .navbar .menu-icon {
-    display: block; /* Display the menu icon for mobile */
-    font-size: 24px; /* Customize the size of the menu icon */
-    cursor: pointer; /* Show pointer cursor for the menu icon */
-  }
+ /* Assuming your navigation bar has the class "navbar" */
+.navbar {
+  /* Add styles to position the menu icon to the left */
+  position: relative; /* Ensure relative positioning for the icon */
+  padding-left: 40px; /* Add space for the menu icon on the left */
+}
+
+/* Style for the menu icon */
+.navbar .menu-icon {
+  display: block;
+  font-size: 24px;
+  cursor: pointer;
+  /* Position the menu icon to the left */
+  position: absolute;
+  left: 20px;
+  top: 28%; /* Align the icon vertically */
+  transform: translateY(-50%); /* Center the icon vertically */
+}
 
   .navbar.active .nav {
     display: flex; /* Show the nav items when the menu is active */
@@ -436,9 +449,9 @@ pre {
     /* background: #3474e6; Change background color of the dropdown menu */
     position: absolute;
     top: 60px;/* Position the dropdown below the navbar */
-    left: 0;
+    left: 0px;
     width: 100%;
-    top:24px;
+    top:50px;
     justify-content: center;
   }
 
