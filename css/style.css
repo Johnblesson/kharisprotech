@@ -277,8 +277,6 @@ pre {
   color: #1C9CEA;
 }
 
-
-
 /* Animations */
 @keyframes slideInFromLeft {
   0% {
@@ -378,9 +376,6 @@ pre {
   }
 }
 
-
-
-
 /* Mobile */
 @media (max-width: 500px) {
   .navbar {
@@ -466,5 +461,8 @@ pre {
   }
   .nav .menu-icon {
     position:absolute;
+  }
+  .logo {
+    font-size: 25px; /* Adjust the font size as needed */
   }
 }
