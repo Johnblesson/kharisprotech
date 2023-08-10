@@ -439,7 +439,7 @@ pre {
   /* Position the menu icon to the left */
   position: absolute;
   left: 20px;
-  top: 28%; /* Align the icon vertically */
+  top: 25%; /* Align the icon vertically */
   transform: translateY(-50%); /* Center the icon vertically */
 }
 
