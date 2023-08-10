@@ -280,7 +280,7 @@ pre {
 
 
 /* Animations */
-/* @keyframes slideInFromLeft {
+@keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
   }
@@ -318,7 +318,7 @@ pre {
   100% {
     transform: translateX(0);
   }
-} */
+}
 @media (max-width: 1000px){
 
   .showcase-form{
