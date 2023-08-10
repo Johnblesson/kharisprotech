@@ -14,15 +14,17 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/testimonial.css">
+    <link rel="icon" href="images/Original logo.png">
     <title>Testimonials</title>
 </head>
 <body>
     <!-- Navbar -->
     <div class="navbar">
         <div class="container flex">
+            <div class="menu-icon">☰</div>
              <h1 class="logo"><a href="index.html">Kharis pro-tech.</a></h1>
             <nav>
-                <ul>
+                <ul class="nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="features.html">Services</a></li>
                     <li><a href="about.html">About</a></li>
@@ -108,6 +110,12 @@
     })(document, window, 'BrevoConversations');
 </script>
 <!-- /Brevo Conversations {/literal} -->
+<script>
+    // JavaScript to toggle the "active" class on click
+    document.querySelector('.menu-icon').addEventListener('click', function() {
+      document.querySelector('.navbar').classList.toggle('active');
+    });
+  </script>
 <script src="testimonial.js"></script>
 </body>
 </html>

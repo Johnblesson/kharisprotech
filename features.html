@@ -6,15 +6,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/utilities.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/Original logo.png">
     <title>Kharis pro-tech</title>
 </head>
 <body>
     <!-- Navbar -->
     <div class="navbar">
         <div class="container flex">
+            <div class="menu-icon">☰</div>
              <h1 class="logo"><a href="index.html">Kharis pro-tech.</a></h1>
             <nav>
-                <ul>
+                <ul class="nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="features.html">Services</a></li>
                     <li><a href="about.html">About</a></li>
@@ -164,5 +166,11 @@
     })(document, window, 'BrevoConversations');
 </script>
 <!-- /Brevo Conversations {/literal} -->
+<script>
+    // JavaScript to toggle the "active" class on click
+    document.querySelector('.menu-icon').addEventListener('click', function() {
+      document.querySelector('.navbar').classList.toggle('active');
+    });
+  </script>
 </body>
 </html>

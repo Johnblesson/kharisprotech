@@ -53,14 +53,14 @@ pre {
 
 .hidden {
   visibility: hidden;
-  height: 0;
+  height: 70px;
 }
 
 /* Navbar */
 .navbar {
   background-color: var(--primary-color);
   color: #fff;
-  height: 70px;
+  height: 100;
 }
 
 .navbar ul {
@@ -280,7 +280,7 @@ pre {
 
 
 /* Animations */
-@keyframes slideInFromLeft {
+/* @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
   }
@@ -318,7 +318,7 @@ pre {
   100% {
     transform: translateX(0);
   }
-}
+} */
 @media (max-width: 1000px){
 
   .showcase-form{
@@ -404,5 +404,54 @@ pre {
   .docs-head img {
    width: 100px;
    justify-self: flex-end;
+  }
+}
+
+.menu-icon {
+  display: none;
+}
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  margin-left: 1px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+  .navbar .nav {
+    display: none; /* Hide the regular navbar */
+  }
+
+  .navbar .menu-icon {
+    display: block; /* Display the menu icon for mobile */
+    font-size: 24px; /* Customize the size of the menu icon */
+    cursor: pointer; /* Show pointer cursor for the menu icon */
+  }
+
+  .navbar.active .nav {
+    display: flex; /* Show the nav items when the menu is active */
+    flex-direction: row;
+    /* background: #3474e6; Change background color of the dropdown menu */
+    position: absolute;
+    top: 60px;/* Position the dropdown below the navbar */
+    left: 0;
+    width: 100%;
+    top:2px;
+    justify-content: center;
+  }
+
+  .navbar.active .nav li {
+    margin-right: 0; /* Remove margin between dropdown items */
+  }
+
+  .navbar.active .nav li a {
+    color: #fff; /* Change link color in the dropdown menu */
+    padding: 10px 20px; /* Add some padding to the dropdown links */
+    text-align: center; /* Center align the dropdown links */
+  }
+  .nav .menu-icon {
+    position:absolute;
   }
 }

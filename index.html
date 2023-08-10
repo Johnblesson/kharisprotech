@@ -13,14 +13,17 @@
     <!-- Navbar -->
     <div class="navbar">
         <div class="container flex">
+            <div class="menu-icon">☰</div>
             <h1 class="logo"><a href="index.html">Kharis pro-tech.</a></h1>
+            <!-- <img src="images/Original logo.png" alt=""> -->
             <nav>
-                <ul>
+                <ul class="nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="features.html">Service</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contacts</a></li>
                 </ul>
+                
             </nav>
         </div>
     </div>
@@ -175,6 +178,13 @@
     })(document, window, 'BrevoConversations');
 </script>
 <!-- /Brevo Conversations {/literal} -->
+
+<script>
+    // JavaScript to toggle the "active" class on click
+    document.querySelector('.menu-icon').addEventListener('click', function() {
+      document.querySelector('.navbar').classList.toggle('active');
+    });
+  </script>
 
 <!-- Google adSense -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8326451828056123"
